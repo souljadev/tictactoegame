@@ -1,19 +1,26 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-$box0: #ff0000;
-$box1: #000000;
-$box2: #00B6FF;
-$box3: #2700FF;
-$box4: #00FFE4;
-$box5: #FF6100;
-$box6: #04FF00;
-$box7: #FFC100;
-$box8: #C900FF;
+$boxcolor0: #ff0; //yellow
+$boxcolor1: #0f0; //green
+$boxcolor2: #00b6ff;
+$boxcolor3: #2700ff;
+$boxcolor4: #00ffe4;
+$boxcolor5: #ff6100;
+$boxcolor6: #45222e;
+$boxcolor7: #ffc100;
+$boxcolor8: #c900ff;
 $font-color: #4e4e4e;
+$background-color: #000;
 
+body {
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+	}
 
-table {
+.gameboard {
   width: 100%;
 }
 
@@ -21,45 +28,104 @@ td {
   width: 33.333%;
 }
 
-td:after {
-  content: '';
-  display: block;
-  margin-top: 100%;
-}
 
 .box0 {
-  border-color: $box0;
+  border: 2px solid;
+  border-bottom-color: $boxcolor0;
+  margin: 2px;
+  padding: 5px;
 }
 
 .box1 {
-  border-color: $box1;
+  border: 2px solid;
+  border-bottom-color: $boxcolor1;
+  margin: 2px;
+  padding: 5px;
 }
 
 .box2 {
-  border-color: $box2;
+  border: 2px solid;
+  border-bottom-color: $boxcolor2;
+  margin: 2px;
+  padding: 5px;
 }
 
 .box3 {
-  border-color: $box3;
+  border: 2px solid;
+  border-bottom-color: $boxcolor3;
+  margin: 2px;
+  padding: 5px;
+}
+
+.box4 {
+  border: 2px solid;
+  border-bottom-color: $boxcolor4;
+  margin: 2px;
+  padding: 5px;
+}
+
+.box5 {
+  border: 2px solid;
+  border-bottom-color: $boxcolor5;
+  margin: 2px;
+  padding: 5px;
+}
+
+.box6 {
+  border: 2px solid;
+  border-bottom-color: $boxcolor6;
+  margin: 2px;
+  padding: 5px;
+}
+
+.box7 {
+  border: 2px solid;
+  border-bottom-color: $boxcolor7;
+  margin: 2px;
+  padding: 5px;
+}
+
+.box8 {
+  border: 2px solid;
+  border-bottom-color: $boxcolor8;
+  margin: 2px;
+  padding: 5px;
 }
 
 
+//
+// header {
+// 	background: gray;
+//   font-size: 14px;
+//   display: inline-block;
+//   padding: 2%;
+//   text-align: center;
+//   width: 96%;
+// }
+//
+// main {
+//   background: blue;
+//   font-size: 12px;
+//   width: 75%;
+//   float: left;
+//   margin: 1% auto;
+//   padding: 1%;
+// }
 
-
-
-
-.stretch {
-  width: 100px;
-}
-
-@media (min-width: 400px) {
-  .stretch {
-    width: 25%;
-  }
-}
-
-@media (min-width: 800px) {
-  .stretch {
-    width: 30%;
-  }
-}
+//
+//
+// .stretch {
+//   width: 100px;
+// }
+//
+// @media (min-width: 400px) {
+//   .stretch {
+//     width: 25%;
+//   }
+// }
+//
+// @media (min-width: 800px) {
+//   .stretch {
+//     width: 30%;
+//   }
+// }
