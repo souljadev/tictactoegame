@@ -1,2 +1,65 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$box0: #ff0000;
+$box1: #000000;
+$box2: #00B6FF;
+$box3: #2700FF;
+$box4: #00FFE4;
+$box5: #FF6100;
+$box6: #04FF00;
+$box7: #FFC100;
+$box8: #C900FF;
+$font-color: #4e4e4e;
+
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 33.333%;
+}
+
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+.box0 {
+  border-color: $box0;
+}
+
+.box1 {
+  border-color: $box1;
+}
+
+.box2 {
+  border-color: $box2;
+}
+
+.box3 {
+  border-color: $box3;
+}
+
+
+
+
+
+
+.stretch {
+  width: 100px;
+}
+
+@media (min-width: 400px) {
+  .stretch {
+    width: 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  .stretch {
+    width: 30%;
+  }
+}
