@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
-</html>
+
+
+
+
+
+
+
+function changeImage () {
+  if (box0.src === 'assets/images/board/pieces/blank.jpg') {
+    box0.src = 'assets/images/board/pieces/redx.png'
+  } else if (box0.src === 'assets/images/board/pieces/redx.png') {
+    box0.src = 'assets/images/board/pieces/candyo.jpg'
+  } else if (box0.src === 'assets/images/board/pieces/candyo.png') {
+    box0.src = 'assets/images/board/pieces/blank.jpg'
+  }
+}
+
+
+box0.onclick = function () {
+  changeImage()
+  console.log(redXEdit)
+}
+
+// lets use a namespace to avoid globals.
+let redX = {
+    // still need to set this when DOM/body is ready
+    rootContext: document.body.getAttribute("data-root"),
+    getContext: function( src ) {
+        return this.rootContext + src;
+    }
+}
+
+img.src = myApp.getContext( "/media/js/close.gif" );
