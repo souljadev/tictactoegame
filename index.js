@@ -9,3 +9,6 @@ require('./assets/scripts/index.js')
 
 // styles
 require('./assets/styles/index.scss')
+
+// working files
+require('./assets/scripts/ttc_scripts/working_scripts.js')
