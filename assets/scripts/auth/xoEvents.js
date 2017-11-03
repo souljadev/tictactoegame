@@ -36,9 +36,8 @@ let i = 0
 const changePic = function (event) {
   this.setAttribute('src', circleonly[i])
   i++
+  if (circleonly[i] > 2) { circleonly = circleonly[0] }
   console.log(circleonly[i])
-  // if (circleonly[i] > 2) { circleonly = circleonly[0] }
-  // console.log(circleonly[i])
 }
 
 module.exports = {
