@@ -15,5 +15,5 @@ $(() => {
 // require('./example')
 
 $(() => {
-  xoEvents.changePic()
+  $('.xoBox').on('click', xoEvents.changePic)
 })

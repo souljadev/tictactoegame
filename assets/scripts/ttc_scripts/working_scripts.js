@@ -26,3 +26,9 @@ console.log(circle)
 console.log(blank)
 console.log(box0)
 */
+//
+// $(document).ready(function () {
+//   $('.box0').click(function () {
+//     console.log('second function')
+//   })
+// })
