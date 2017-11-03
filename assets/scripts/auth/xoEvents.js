@@ -22,7 +22,7 @@
 
 const imgValue = [0, 1]
 
-const imgSrc = ['assets/images/board/pieces/redx.png', 'assets/images/board/pieces/circle.jpg']
+const imgSrc = ['https://i.imgur.com/7NjsjJO.png', 'https://i.imgur.com/M9VrAIV.jpg']
 
 let i = 0
 
@@ -31,8 +31,9 @@ const changePic = function (event) {
   this.setAttribute('value', imgValue[i])
   console.log(imgSrc[i])
   console.log(imgValue[i])
-  i++
-  if (i > 1) { i = 0 }
+  if (i === 0) {
+    i = 1
+  } else (i = 0)
 }
 
 module.exports = {
