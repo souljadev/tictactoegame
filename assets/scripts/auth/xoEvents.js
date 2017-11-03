@@ -27,13 +27,23 @@ const imgSrc = ['https://i.imgur.com/7NjsjJO.png', 'https://i.imgur.com/M9VrAIV.
 let i = 0
 
 const changePic = function (event) {
-  this.setAttribute('src', imgSrc[i])
-  this.setAttribute('value', imgValue[i])
-  console.log(imgSrc[i])
-  console.log(imgValue[i])
-  if (i === 0) {
-    i = 1
-  } else (i = 0)
+  console.log($(event.target).val())
+  // if there is a zero or 1 end function return false
+  if ($(event.target).val() === '0' || $(event.target).val() === '1') {
+    return false
+  } else {
+    // if value is not defined then set attr to boxes
+    this.setAttribute('src', imgSrc[i])
+    this.setAttribute('value', imgValue[i])
+    console.log(imgSrc[i])
+    console.log(imgValue[i])
+    // if I is 0 make it 1 else make 0
+    if (i === 0) {
+      i = 1
+    } else {
+      i = 0
+    }
+  }
 }
 
 module.exports = {
