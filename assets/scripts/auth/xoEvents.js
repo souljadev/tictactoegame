@@ -6,38 +6,33 @@
 
 // X O pictures
 // const boxPic0 = document.getElementByClassName('xoBox')
+//
+// const BoardPic = function (src, alt, value) {
+//   const img = document.createElement('img')
+//   img.src = src
+//   img.alt = alt
+//   img.value = value
+// }
+//
+// const redX = new BoardPic('assets/images/board/pieces/redx.png', 'tic', 1)
+//
+// const circle = new BoardPic('assets/images/board/pieces/circle.jpg', 'tac', 2)
+//
+// const blank = new BoardPic('assets/images/board/pieces/blank.jpg', 'toe', 0)
 
-const BoardPic = function (src, alt, value) {
-  const img = document.createElement('img')
-  img.src = src
-  img.alt = alt
-  img.value = value
-}
+const imgValue = [0, 1]
 
-const redX = new BoardPic('assets/images/board/pieces/redx.png', 'tic', 1)
+const imgSrc = ['assets/images/board/pieces/redx.png', 'assets/images/board/pieces/circle.jpg']
 
-const circle = new BoardPic('assets/images/board/pieces/circle.jpg', 'tac', 2)
-
-const blank = new BoardPic('assets/images/board/pieces/blank.jpg', 'toe', 0)
-
-const pics = [blank, circle, redX]
-
-let circleonly = ['assets/images/board/pieces/redx.png', 'assets/images/board/pieces/circle.jpg', 'assets/images/board/pieces/blank.jpg']
-
-// const setAttr = $(function () {
-//   $('.xoBox').each(function () {
-//     $.each(this.attributes, function (i, a) {
-//       console.log(i, a.name, a.value)
-//     })
-//   })
-// })
 let i = 0
 
 const changePic = function (event) {
-  this.setAttribute('src', circleonly[i])
+  this.setAttribute('src', imgSrc[i])
+  this.setAttribute('value', imgValue[i])
+  console.log(imgSrc[i])
+  console.log(imgValue[i])
   i++
-  if (circleonly[i] > 2) { circleonly = circleonly[0] }
-  console.log(circleonly[i])
+  if (i > 1) { i = 0 }
 }
 
 module.exports = {

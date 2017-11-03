@@ -20,8 +20,11 @@ body {
   width: 900px;
 	}
 
-.gameboard {
-  width: 100%;
+.board-design {
+  border: 2px;
+  border-color: $font-color;
+  text-align: center;
+  width: 80%;
 }
 
 td {
