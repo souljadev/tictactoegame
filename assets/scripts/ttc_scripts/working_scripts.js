@@ -1,4 +1,18 @@
 
+// function getValue (event) {
+//   const divValue = parseInt(event.target.textContent)
+//   boardRow0.push(divValue)
+// }
+//
+// function numberTrack () {
+//   const gridItems = $('#box')
+//   for (let i = 0; i < gridItems.length; i++) {
+//     gridItems[i].onclick = getValue
+//   }
+// }
+//
+// console.log(numberTrack())
+// console.log(boardRow0)
 // let box0click = function () {
 //   document.getElementById('box0').click()
 //   console.log('it works!')
