@@ -3,6 +3,7 @@
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const xoEvents = require('./auth/xoEvents')
+const events = require('./auth/events')
 
 $(() => {
   setAPIOrigin(location, config)
@@ -18,4 +19,5 @@ $(() => {
   $('.xoBox').on('click', xoEvents.changePic)
   // $('.xoBox').on('click', xoEvents.boardValue)
   // $('.xoBox').on('click', xoEvents.gameLogic)
+  events.addHandlers()
 })
