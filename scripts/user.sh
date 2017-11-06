@@ -1,4 +1,4 @@
 #!/bin/bash
 
-curl --include --request GET http://tic-tac-toe.wdibos.com/users/$ID \
+curl --include --request GET https://aqueous-atoll-85096.herokuapp.com/users/$ID \
   --header "Authorization: Token token=$TOKEN"

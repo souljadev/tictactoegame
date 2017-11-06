@@ -46,3 +46,66 @@ console.log(box0)
 //     console.log('second function')
 //   })
 // })
+
+// const gameLogic = function (event) {
+//   // row 1 match
+//   if (($(event.target).val() === '0' || $(event.target).val() === '1') &&
+//     $('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//     // row 2 match
+//   } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//     //  row 3 match
+//   } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//     // col 1 match
+//   } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//     // col 2 match
+//   } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//     // col 3 match
+//   } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//     // top left to bottom right
+//   } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//     // top right to bottom left
+//   } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === '0') {
+//     console.log('Player 1 wins')
+//     return false
+//   } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === '1') {
+//     console.log('Player 2 wins')
+//     return false
+//   } else {
+//     console.log('draw')
+//   }
+// }

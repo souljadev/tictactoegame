@@ -1,6 +1,13 @@
 #!/bin/bash
 
-curl --include --request POST http://tic-tac-toe.wdibos.com/sign-in \
+# API="${API_ORIGIN:-http://httpbin.org}"
+# URL_PATH="/post"
+API="${API_ORIGIN:-https://aqueous-atoll-85096.herokuapp.com/}"
+URL_PATH="/sign-in"
+
+curl "${API}${URL_PATH}" \
+  --include \
+  --request POST \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
@@ -8,3 +15,6 @@ curl --include --request POST http://tic-tac-toe.wdibos.com/sign-in \
       "password": "'"${PASSWORD}"'"
     }
   }'
+
+
+echo

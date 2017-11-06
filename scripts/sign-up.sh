@@ -1,21 +1,18 @@
 #!/bin/bash
 
-curl --include --request POST http://tic-tac-toe.wdibos.com/sign-up \
+API="${API_ORIGIN:-https://aqueous-atoll-85096.herokuapp.com/}"
+URL_PATH="/sign-up"
+
+curl "${API}${URL_PATH}" \
+  --include \
+  --request POST \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
       "email": "'"${EMAIL}"'",
       "password": "'"${PASSWORD}"'",
-      "password_confirmation": "'"${PASSWORD_CONFIRMATION}"'"
+      "password_confirmation": "'"${PASSWORD}"'"
     }
   }'
 
-# curl --include --request POST http://tic-tac-toe.wdibos.com/sign-up \
-#   --header "Content-Type: application/json" \
-#   --data '{
-#     "credentials": {
-#       "email": "another@example.email",
-#       "password": "an example password",
-#       "password_confirmation": "an example password"
-#     }
-#   }'
+echo

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-curl --include --request DELETE http://tic-tac-toe.wdibos.com/sign-out/$ID \
+curl --include --request DELETE https://aqueous-atoll-85096.herokuapp.com/sign-out/$ID \
   --header "Authorization: Token token=$TOKEN" \

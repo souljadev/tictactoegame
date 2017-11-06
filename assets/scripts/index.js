@@ -17,5 +17,5 @@ $(() => {
 $(() => {
   $('.xoBox').on('click', xoEvents.changePic)
   // $('.xoBox').on('click', xoEvents.boardValue)
-  $('.xoBox').on('click', xoEvents.gameLogic)
+  // $('.xoBox').on('click', xoEvents.gameLogic)
 })

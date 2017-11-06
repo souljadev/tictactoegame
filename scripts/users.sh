@@ -1,4 +1,4 @@
 #!/bin/bash
 
-curl --include --request GET http://localhost:3000/users \
+curl --include --request GET https://aqueous-atoll-85096.herokuapp.com/users \
   --header "Authorization: Token token=$TOKEN"
