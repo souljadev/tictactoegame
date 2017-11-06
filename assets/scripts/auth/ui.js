@@ -42,6 +42,31 @@ const signOutFailure = function (error) {
   $('#message').text('Error on signing')
 }
 
+const gamesPlayedStats = function (gamesPlayed) {
+  console.error(gamesPlayed)
+  $('#gameMessage').text(gamesPlayed)
+}
+
+const newGameSuccess = function () {
+  console.log('New Game Created!')
+  $('#message').text('New Game Created!')
+}
+
+const newGameFailure = function (error) {
+  console.error(error)
+  $('#message').text('Error on creating new game!!')
+}
+
+const findGameSuccess = function () {
+  console.log('Found Stats!')
+  $('#message').text('Your Wins!')
+}
+
+const findGameFailure = function (error) {
+  console.error(error)
+  $('#message').text('Error on finding stats!!')
+}
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
@@ -50,5 +75,10 @@ module.exports = {
   changePasswordSuccess,
   changePasswordFailure,
   signOutFailure,
-  signOutSuccess
+  signOutSuccess,
+  newGameFailure,
+  newGameSuccess,
+  findGameFailure,
+  findGameSuccess,
+  gamesPlayedStats
 }

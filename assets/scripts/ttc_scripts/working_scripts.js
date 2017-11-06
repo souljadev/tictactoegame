@@ -1,4 +1,34 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function getValue (event) {
 //   const divValue = parseInt(event.target.textContent)
 //   boardRow0.push(divValue)

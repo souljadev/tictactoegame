@@ -1,11 +1,6 @@
 'use strict'
 
-// const getFormFields = require(`../../../lib/get-form-fields`)
-// const api = require('./api')
-// const ui = require('./ui')
-
 // X O pictures
-
 const imgValue = [0, 1]
 
 const imgSrc = ['https://i.imgur.com/7NjsjJO.png', 'https://i.imgur.com/M9VrAIV.jpg']
@@ -105,6 +100,9 @@ const changePic = function (event) {
     this.setAttribute('value', imgValue[i])
     // function checks if there is a winner
     gameLogic()
+    const board = [ $('#box0').val(), $('#box1').val(), $('#box2').val(), $('#box3').val(), $('#box4').val(), $('#box5').val(), $('#box6').val(), $('#box7').val(),
+      $('#box8').val()]
+    console.log(board)
     // console.log($(event.target).val())
     // if I is 0 make it 1 else make 0
     if (i === 0) {
@@ -115,8 +113,39 @@ const changePic = function (event) {
   }
 }
 
+const resetGame = function (event) {
+  event.preventDefault()
+  // clear box 0
+  $('#box0').attr('src', '')
+  $('#box0').val('')
+  // clear box 1
+  $('#box1').attr('src', '')
+  $('#box1').val('')
+  // clear box 2
+  $('#box2').attr('src', '')
+  $('#box2').val('')
+  // clear box 3
+  $('#box3').attr('src', '')
+  $('#box3').val('')
+  // clear box 4
+  $('#box4').attr('src', '')
+  $('#box4').val('')
+  // clear box 5
+  $('#box5').attr('src', '')
+  $('#box5').val('')
+  // clear box 6
+  $('#box6').attr('src', '')
+  $('#box6').val('')
+  // clear box 7
+  $('#box7').attr('src', '')
+  $('#box7').val('')
+  // clear box 8
+  $('#box8').attr('src', '')
+  $('#box8').val('')
+  gameOver = false
+}
+
 module.exports = {
+  resetGame,
   changePic
-  // boardValue,
-  // gameLogic
 }
