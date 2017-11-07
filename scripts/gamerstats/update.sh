@@ -1,6 +1,7 @@
 #!/bin/bash
 
-curl --include --request POST https://aqueous-atoll-85096.herokuapp.com/games/ \
+
+curl --include --request PATCH https://aqueous-atoll-85096.herokuapp.com/games/ \
   --header "Authorization: Token token=$TOKEN"
 
 

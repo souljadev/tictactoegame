@@ -47,8 +47,9 @@ const gamesPlayedStats = function (gamesPlayed) {
   $('#gameMessage').text(gamesPlayed)
 }
 
-const newGameSuccess = function () {
+const newGameSuccess = function (data) {
   console.log('New Game Created!')
+  console.log(data)
   $('#message').text('New Game Created!')
 }
 
@@ -57,14 +58,24 @@ const newGameFailure = function (error) {
   $('#message').text('Error on creating new game!!')
 }
 
-const findGameSuccess = function () {
+const showGameSuccess = function () {
   console.log('Found Stats!')
   $('#message').text('Your Wins!')
 }
 
-const findGameFailure = function (error) {
+const showGameFailure = function (error) {
   console.error(error)
   $('#message').text('Error on finding stats!!')
+}
+
+const updateScoreSuccess = function () {
+  console.log('Updated!')
+  $('#message').text('Updated!')
+}
+
+const updateScoreFailure = function (error) {
+  console.error(error)
+  $('#message').text('Error on updating stats!!')
 }
 
 module.exports = {
@@ -78,7 +89,9 @@ module.exports = {
   signOutSuccess,
   newGameFailure,
   newGameSuccess,
-  findGameFailure,
-  findGameSuccess,
+  showGameFailure,
+  showGameSuccess,
+  updateScoreFailure,
+  updateScoreSuccess,
   gamesPlayedStats
 }

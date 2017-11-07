@@ -1,114 +1,129 @@
 'use strict'
+const store = require('../store')
 
 // X O pictures
-const imgValue = [0, 1]
+const imgValue = ['x', '0']
 
 const imgSrc = ['https://i.imgur.com/7NjsjJO.png', 'https://i.imgur.com/M9VrAIV.jpg']
 
-let gameOver = false
+store.gameOver = false
 
-let i = 0
+let i = 'x'
+
+const playerOTurn = function () {
+  $('#playerstatus').text('Player 2 Turn')
+}
+
+const playerXTurn = function () {
+  $('#playerstatus').text('Player 1 Turn')
+}
 
 const gameLogic = function (event) {
   // row 1 match
-  if ($('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === '0') {
+  if ($('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
     // row 2 match
-  } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === '0') {
+  } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
     //  row 3 match
-  } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === '0') {
+  } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
     // col 1 match
-  } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === '0') {
+  } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
     // col 2 match
-  } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === '0') {
+  } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
     // col 3 match
-  } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === '0') {
+  } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
     // top left to bottom right
-  } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === '0') {
+  } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
     // top right to bottom left
-  } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === '0') {
+  } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === 'x') {
     console.log('Player 1 wins')
-    gameOver = true
-  } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === '1') {
+    store.gameOver = true
+  } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === 'o') {
     console.log('Player 2 wins')
-    gameOver = true
+    store.gameOver = true
   } else if (
-    ($('#box0').val() === '0' || $('#box0').val() === '1') &&
-    ($('#box1').val() === '0' || $('#box1').val() === '1') &&
-    ($('#box2').val() === '0' || $('#box2').val() === '1') &&
-    ($('#box3').val() === '0' || $('#box3').val() === '1') &&
-    ($('#box4').val() === '0' || $('#box4').val() === '1') &&
-    ($('#box5').val() === '0' || $('#box5').val() === '1') &&
-    ($('#box6').val() === '0' || $('#box6').val() === '1') &&
-    ($('#box7').val() === '0' || $('#box7').val() === '1') &&
-    ($('#box8').val() === '0' || $('#box8').val() === '1') &&
-    gameOver === false) {
+    ($('#box0').val() === 'x' || $('#box0').val() === 'o') &&
+    ($('#box1').val() === 'x' || $('#box1').val() === 'o') &&
+    ($('#box2').val() === 'x' || $('#box2').val() === 'o') &&
+    ($('#box3').val() === 'x' || $('#box3').val() === 'o') &&
+    ($('#box4').val() === 'x' || $('#box4').val() === 'o') &&
+    ($('#box5').val() === 'x' || $('#box5').val() === 'o') &&
+    ($('#box6').val() === 'x' || $('#box6').val() === 'o') &&
+    ($('#box7').val() === 'x' || $('#box7').val() === 'o') &&
+    ($('#box8').val() === 'x' || $('#box8').val() === 'o') &&
+    store.gameOver === false) {
     console.log('draw')
   } else {
-    if (i === 0) {
+    if (i === 'x') {
+      playerOTurn()
       console.log('Player 2 Turn')
     } else {
+      playerXTurn()
       console.log('Player 1 Turn')
     }
   }
 }
 
+let k = 0
 const changePic = function (event) {
   // start of clicking button
   // if there is a zero or 1 end function return false
-  if ($(event.target).val() === '0' ||
-       $(event.target).val() === '1' ||
-       gameOver === true) {
+  if ($(event.target).val() === 'x' ||
+       $(event.target).val() === 'o' ||
+       store.gameOver === true) {
     return false
   } else {
     // if value is not defined then set attr to boxes
-    this.setAttribute('src', imgSrc[i])
-    this.setAttribute('value', imgValue[i])
+    this.setAttribute('src', imgSrc[k])
+    this.setAttribute('value', imgValue[k])
     // function checks if there is a winner
     gameLogic()
-    const board = [ $('#box0').val(), $('#box1').val(), $('#box2').val(), $('#box3').val(), $('#box4').val(), $('#box5').val(), $('#box6').val(), $('#box7').val(),
-      $('#box8').val()]
-    console.log(board)
+    const idString = $(this).attr('id')
+    const lastNum = idString.substr(idString.length - 1)
+    store.index = Number(lastNum)
+    console.log(lastNum)
     // console.log($(event.target).val())
     // if I is 0 make it 1 else make 0
-    if (i === 0) {
-      i = 1
+    if (i === 'x') {
+      k = 1
+      i = 'o'
     } else {
-      i = 0
+      i = 'x'
+      k = 0
     }
   }
 }
@@ -142,10 +157,13 @@ const resetGame = function (event) {
   // clear box 8
   $('#box8').attr('src', '')
   $('#box8').val('')
-  gameOver = false
+  store.gameOver = false
 }
 
 module.exports = {
   resetGame,
-  changePic
+  changePic,
+  gameLogic,
+  playerXTurn,
+  playerOTurn
 }
