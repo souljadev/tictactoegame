@@ -6,6 +6,7 @@ $boxcolor1: #0f0; //green
 $boxcolor2: #00b6ff;
 $boxcolor3: #2700ff;
 $boxcolor4: #00ffe4;
+$gray: #00ffe4;
 $boxcolor5: #ff6100;
 $boxcolor6: #45222e;
 $boxcolor7: #ffc100;
@@ -93,6 +94,15 @@ td {
   border-bottom-color: $boxcolor8;
   margin: 2px;
   padding: 5px;
+}
+
+nav {
+  background: $gray;
+  display: inline-block;
+  font-size: 14px;
+  padding: 2%;
+  text-align: center;
+  width: 96%;
 }
 
 

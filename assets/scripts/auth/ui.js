@@ -48,9 +48,13 @@ const gamesPlayedStats = function (gamesPlayed) {
 }
 
 const newGameSuccess = function (data) {
-  console.log('New Game Created!')
   console.log(data)
-  $('#message').text('New Game Created!')
+  console.log(data.game.id)
+  store.game = data.game
+  store.game.id = data.game.id
+  store.game.cells = data.game.cells
+  store.game.over = data.game.over
+  $('#message').text('Create game succesfully')
 }
 
 const newGameFailure = function (error) {
@@ -58,24 +62,23 @@ const newGameFailure = function (error) {
   $('#message').text('Error on creating new game!!')
 }
 
-const showGameSuccess = function () {
-  console.log('Found Stats!')
-  $('#message').text('Your Wins!')
-}
-
-const showGameFailure = function (error) {
-  console.error(error)
-  $('#message').text('Error on finding stats!!')
-}
-
-const updateScoreSuccess = function () {
-  console.log('Updated!')
+const updateScoreSuccess = function (data) {
   $('#message').text('Updated!')
 }
 
 const updateScoreFailure = function (error) {
   console.error(error)
   $('#message').text('Error on updating stats!!')
+}
+
+const showGameSuccess = function (data) {
+  console.log('Found data! wwwwwhat', data)
+  $('#playerstatus').text(data.games.length)
+}
+
+const showGameFailure = function (error) {
+  console.error(error)
+  $('#playerstatus').text('Error on finding stats!!')
 }
 
 module.exports = {
