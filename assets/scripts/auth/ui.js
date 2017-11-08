@@ -48,7 +48,7 @@ const signOutFailure = function (error) {
 
 const gamesPlayedStats = function (gamesPlayed) {
   console.error(gamesPlayed)
-  $('#gameMessage').text(gamesPlayed)
+  $('#message').text(gamesPlayed)
 }
 
 const newGameSuccess = function (data) {
@@ -76,8 +76,7 @@ const updateScoreFailure = function (error) {
 }
 
 const showGameSuccess = function (data) {
-  console.log('Found data! wwwwwhat', data)
-  $('#playerstatus').text(data.games.length)
+  $('#playerstatus').text('TOTAL GAMES PLAYED: ' + data.games.length)
 }
 
 const showGameFailure = function (error) {

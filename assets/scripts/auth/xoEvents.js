@@ -28,61 +28,61 @@ const playerXTurn = function () {
 const gameLogic = function (event) {
   // row 1 match player X
   if ($('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   // row 1 match player O
   } else if ($('#box0').val() === $('#box1').val() && $('#box1').val() === $('#box2').val() && $('#box1').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
     // row 2 match player X
   } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   } else if ($('#box3').val() === $('#box4').val() && $('#box4').val() === $('#box5').val() && $('#box4').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
     //  row 3 match player X
   } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   } else if ($('#box6').val() === $('#box7').val() && $('#box7').val() === $('#box8').val() && $('#box7').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
     // col 1 match player X
   } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   } else if ($('#box0').val() === $('#box3').val() && $('#box3').val() === $('#box6').val() && $('#box3').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
     // col 2 match player X
   } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   } else if ($('#box1').val() === $('#box4').val() && $('#box4').val() === $('#box7').val() && $('#box4').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
     // col 3 match player X
   } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   } else if ($('#box2').val() === $('#box5').val() && $('#box5').val() === $('#box8').val() && $('#box5').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
     // top left to bottom right
     // player X
   } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   } else if ($('#box0').val() === $('#box4').val() && $('#box4').val() === $('#box8').val() && $('#box4').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
     // top right to bottom left
   } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === 'x') {
-    console.log('Player 1 wins')
+    $('#playerstatus').text('Player 1 wins!')
     store.gameOver = true
   } else if ($('#box2').val() === $('#box4').val() && $('#box4').val() === $('#box6').val() && $('#box4').val() === 'o') {
-    console.log('Player 2 wins')
+    $('#playerstatus').text('Player 2 wins!')
     store.gameOver = true
   } else if (
     ($('#box0').val() === 'x' || $('#box0').val() === 'o') &&
@@ -95,7 +95,7 @@ const gameLogic = function (event) {
     ($('#box7').val() === 'x' || $('#box7').val() === 'o') &&
     ($('#box8').val() === 'x' || $('#box8').val() === 'o') &&
     store.gameOver === false) {
-    console.log('draw')
+    $('#playerstatus').text('Draw!')
   } else {
     if (i === 'x') {
       playerOTurn()
@@ -142,31 +142,31 @@ const changePic = function (event) {
 const resetGame = function (event) {
   event.preventDefault()
   // clear box 0
-  $('#box0').attr('src', '')
+  $('#box0').attr('src', 'https://i.imgur.com/kPzL8KP.jpg?1')
   $('#box0').val('')
   // clear box 1
-  $('#box1').attr('src', '')
+  $('#box1').attr('src', 'https://i.imgur.com/4eQCKuw.gif')
   $('#box1').val('')
   // clear box 2
-  $('#box2').attr('src', '')
+  $('#box2').attr('src', 'https://i.imgur.com/zXSwqAG.gif')
   $('#box2').val('')
   // clear box 3
-  $('#box3').attr('src', '')
+  $('#box3').attr('src', 'https://i.imgur.com/K7H8ZaX.gif')
   $('#box3').val('')
   // clear box 4
-  $('#box4').attr('src', '')
+  $('#box4').attr('src', 'https://i.imgur.com/jbQ2brx.gif')
   $('#box4').val('')
   // clear box 5
-  $('#box5').attr('src', '')
+  $('#box5').attr('src', 'https://i.imgur.com/1G2rxnf.gif')
   $('#box5').val('')
   // clear box 6
-  $('#box6').attr('src', '')
+  $('#box6').attr('src', 'https://i.imgur.com/QmN8DL7.gif')
   $('#box6').val('')
   // clear box 7
-  $('#box7').attr('src', '')
+  $('#box7').attr('src', 'https://i.imgur.com/eStuyxQ.gif')
   $('#box7').val('')
   // clear box 8
-  $('#box8').attr('src', '')
+  $('#box8').attr('src', 'https://i.imgur.com/pWm94WV.gif')
   $('#box8').val('')
   store.gameOver = false
   i = 'x'
