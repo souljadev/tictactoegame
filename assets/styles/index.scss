@@ -7,104 +7,72 @@ $boxcolor2: #00b6ff;
 $boxcolor3: #2700ff;
 $boxcolor4: #00ffe4;
 $gray: #00ffe4;
+$white: #fff;
 $boxcolor5: #ff6100;
 $boxcolor6: #45222e;
 $boxcolor7: #ffc100;
 $boxcolor8: #c900ff;
 $font-color: #4e4e4e;
-$background-color: #000;
+$background-color: #040404;
+$backgroundimg: url('https://ak2.picdn.net/shutterstock/videos/8434522/thumb/1.jpg');
 
 body {
+  background-color: $background-color;
   font-size: 18px;
   margin: 0 auto;
   padding: 0;
-  width: 900px;
+  width: 1000px;
 	}
+
+header {
+  text-align: center;
+  }
 
 .boxboard {
   border: 2px solid;
   border-bottom-color: $boxcolor0;
-  margin: 2px;
-  padding: 5px;
+  height: 100%;
+  margin: 1px;
+  padding: 0;
 }
 
 td {
   width: 33.333%;
 }
 
-
-.box0 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor0;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box1 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor1;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box2 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor2;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box3 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor3;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box4 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor4;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box5 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor5;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box6 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor6;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box7 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor7;
-  margin: 2px;
-  padding: 5px;
-}
-
-.box8 {
-  border: 2px solid;
-  border-bottom-color: $boxcolor8;
-  margin: 2px;
-  padding: 5px;
-}
-
 nav {
-  background: $gray;
+  background-image: url('https://ak2.picdn.net/shutterstock/videos/8434522/thumb/1.jpg');
   display: inline-block;
   font-size: 14px;
   padding: 2%;
   text-align: center;
-  width: 96%;
+  width: 95%;
 }
 
+h1 {
+  color: $boxcolor2;
+  font-weight: 10;
+}
+
+legend {
+  color: $white;
+  font-weight: 10;
+}
+
+nav1 {
+  background: $gray;
+  display: inline-block;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 95%;
+}
+
+table {
+  width: 95%;
+}
 
 //
 // header {
