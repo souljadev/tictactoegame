@@ -5,7 +5,7 @@ const signUpSuccess = function (data) {
   console.log(data)
   $('section').show()
   $('nav1').show()
-  $('#message').text('Signed up succesfully')
+  $('#message').text('Signed up succesfully, welcome to the agency.')
 }
 
 const signUpFailure = function (error) {
@@ -18,7 +18,7 @@ const signInSuccess = function (data) {
   store.user = data.user
   $('section').show()
   $('nav1').show()
-  $('#message').text('Signed in succesfully')
+  $('#message').text('Signed in succesfully, hello 007')
 }
 
 const signInFailure = function (error) {
@@ -38,7 +38,9 @@ const changePasswordFailure = function (error) {
 
 const signOutSuccess = function () {
   console.log('Succesfully Signed Out!')
-  $('#message').text('Succesfully Signed Out!')
+  $('section').hide()
+  $('nav1').hide()
+  $('#message').text('Goodbye 007, please bring back the car in one piece this time.')
 }
 
 const signOutFailure = function (error) {
