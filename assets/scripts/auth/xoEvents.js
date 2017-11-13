@@ -99,10 +99,8 @@ const gameLogic = function (event) {
   } else {
     if (i === 'x') {
       playerOTurn()
-      console.log('Player 2 Turn')
     } else {
       playerXTurn()
-      console.log('Player 1 Turn')
     }
   }
 }
@@ -124,7 +122,6 @@ const changePic = function (event) {
     const idString = $(this).attr('id')
     const lastNum = idString.substr(idString.length - 1)
     store.index = Number(lastNum)
-    console.log(lastNum)
     // console.log($(event.target).val())
     // if I is 0 make it 1 else make 0
     if (i === 'x') {
@@ -140,7 +137,6 @@ const changePic = function (event) {
 }
 
 const resetGame = function (event) {
-  event.preventDefault()
   // clear box 0
   $('#box0').attr('src', 'https://i.imgur.com/kPzL8KP.jpg?1')
   $('#box0').val('')
@@ -168,6 +164,7 @@ const resetGame = function (event) {
   // clear box 8
   $('#box8').attr('src', 'https://i.imgur.com/pWm94WV.gif')
   $('#box8').val('')
+  $('#playerstatus').text('New Game! Player 1 Turn')
   store.gameOver = false
   i = 'x'
   k = 0

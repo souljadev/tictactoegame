@@ -1,13 +1,12 @@
 'use strict'
 const store = require('../store')
-const getFormFields = require(`../../../lib/get-form-fields`)
-
+const xoEvents = require('./xoEvents')
 const backapi = require('./backapi')
 const ui = require('./ui')
 
 const createGame = function (event) {
-  console.log()
   event.preventDefault()
+  xoEvents.resetGame()
   backapi.createNewGame()
     .then(ui.newGameSuccess)
     .catch(ui.newGameFailure)
@@ -46,7 +45,6 @@ const showIndex = function (event) {
     }
   }
   event.preventDefault()
-  console.log(data)
   backapi.showGame(data)
     .then(ui.showGameSuccess)
     .catch(ui.showGameFailure)

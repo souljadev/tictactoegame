@@ -19,7 +19,6 @@ const onSignIn = function (event) {
   api.signIn(data)
     .then(ui.signInSuccess)
     .catch(ui.signInFailure)
-  console.log(data)
 }
 
 const onChange = function (event) {
@@ -28,7 +27,6 @@ const onChange = function (event) {
   api.onChanges(data)
     .then(ui.changePasswordSuccess)
     .catch(ui.changePasswordFailure)
-  console.log(data)
 }
 
 const onSignOut = function (event) {

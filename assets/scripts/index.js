@@ -12,8 +12,6 @@ $(() => {
 
 $(() => {
   $('.xoBox').on('click', xoEvents.changePic)
-  $('#reset-game').on('submit', xoEvents.resetGame)
-  // $('#reset-game').on('submit', xoEvents.changePic)
   events.addHandlers()
   gameEvents.addUserHandlers()
 })
