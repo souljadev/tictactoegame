@@ -25,17 +25,23 @@ As a user, I want to be able to log in again and still have tracked game.
 
 ## Technologies Used
 
--HTML
--CSS3
--jQUERY
--JavaScript
--GIT/GITHUB
--SASS
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+
+HTML
+* CSS3.
+* jQUERY.
+* JavaScript.
+* GIT/GITHUB
+* SASS
 
 ## Wire Frames
 
-[Wire Frame 1](https://imgur.com/xVYLA7K)
-[Wire Frame 2](https://imgur.com/UHCTgc3)
+https://imgur.com/xVYLA7K
+https://imgur.com/UHCTgc3
 
 ## Future Iterations
 
