@@ -21,11 +21,11 @@ const signInFailure = function () {
 }
 
 const changePasswordSuccess = function (data) {
-  $('#message').text('Changed password successfully')
+  $('#playerstatus').text('Changed password successfully')
 }
 
 const changePasswordFailure = function () {
-  $('#message').text('Error on change passwords')
+  $('#playerstatus').text('Error on change passwords')
 }
 
 const signOutSuccess = function () {
@@ -38,7 +38,7 @@ const signOutSuccess = function () {
 
 const signOutFailure = function () {
   $('nav').show(500)
-  $('#message').text('Error on signing')
+  $('#playerstatus').text('Error on signing')
 }
 
 const gamesPlayedStats = function (gamesPlayed) {
@@ -55,7 +55,7 @@ const newGameSuccess = function (data) {
 }
 
 const newGameFailure = function () {
-  $('#message').text('Error on creating new game!!')
+  $('#playerstatus').text('Error on creating new game!!')
 }
 
 const updateScoreSuccess = function (data) {
