@@ -25,20 +25,19 @@ As a user, I want to be able to log in again and still have tracked game.
 
 ## Technologies Used
 
-*HTML
-*CSS3
-*jQUERY
-*JavaScript
-*GIT/GITHUB
-*SASS
-
-:EMOJICODE:
-:+1::+1:
+-HTML
+-CSS3
+-jQUERY
+-JavaScript
+-GIT/GITHUB
+-SASS
 
 ## Wire Frames
-![alt text](https://imgur.com/xVYLA7K)
-![alt text](https://imgur.com/UHCTgc3)
+
+[Wire Frame 1](https://imgur.com/xVYLA7K)
+[Wire Frame 2](https://imgur.com/UHCTgc3)
 
 ## Future Iterations
+
 On next update, I will fix patch clicks still running after game is finished.
 Add sounds to game
