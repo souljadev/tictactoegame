@@ -39,10 +39,6 @@ I wanted the game to work first and then attach it to the database. I tried to b
 
 
 ## Future Iterations
-<<<<<<< HEAD
 
-On next update, I will fix patch clicks still running after game is finished.
-=======
 On next update, I will fix patch clicks still running after game is finished. <br>
->>>>>>> version14
 Add sounds to game
