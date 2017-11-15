@@ -34,8 +34,8 @@ I wanted the game to work first and then attach it to the database. I tried to b
 
 ## Wire Frames
 
-<img src="https://imgur.com/xVYLA7K" title="Wire Frame 1"/>
-<img src="https://imgur.com/UHCTgc3" title="Wire Frame 2"/>
+<img src="https://i.imgur.com/xVYLA7K.jpg" title="Wire Frame 1"/>
+<img src="https://i.imgur.com/UHCTgc3.jpg" title="Wire Frame 2"/>
 
 
 ## Future Iterations
