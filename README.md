@@ -25,19 +25,23 @@ As a user, I want to be able to log in again and still have tracked game.
 
 ## Technologies Used
 
-*HTML
-*CSS3
-*jQUERY
-*JavaScript
-*GIT/GITHUB
-*SASS
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
 
-:EMOJICODE:
-:+1::+1:
+HTML
+* CSS3.
+* jQUERY.
+* JavaScript.
+* GIT/GITHUB
+* SASS
 
 ## Wire Frames
-![alt text](https://imgur.com/xVYLA7K)
-![alt text](https://imgur.com/UHCTgc3)
+
+https://imgur.com/xVYLA7K
+https://imgur.com/UHCTgc3
 
 ## Future Iterations
 On next update, I will fix patch clicks still running after game is finished.
