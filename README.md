@@ -14,36 +14,35 @@ I wanted the game to work first and then attach it to the database. I tried to b
 
 ## User Stories
 
-As a user, I want to be able to sign up an account.
-As a user, I want to be able to sign into my account.
-As a user, I want to be able to create a new game and play the game.
-As a user, I want to be able to reset the game and play another game.
-As a user, I want to be able to track the amount of games I've played.
-As a user, when I am done with the game, I want to be able to log off.
-As a user, I want to be able to log in again and still have tracked game.
+- As a user, I want to be able to sign up an account.
+- As a user, I want to be able to sign into my account.
+- As a user, I want to be able to create a new game and play the game.
+- As a user, I want to be able to reset the game and play another game.
+- As a user, I want to be able to track the amount of games I've played.
+- As a user, when I am done with the game, I want to be able to log off.
+- As a user, I want to be able to log in again and still have tracked game.
 
 
 ## Technologies Used
 
-<ul>
-<li>Candy.</li>
-<li>Gum.</li>
-<li>Booze.</li>
-</ul>
-
-HTML
-* CSS3.
-* jQUERY.
-* JavaScript.
+* HTML
+* CSS3
+* jQUERY
+* JavaScript
 * GIT/GITHUB
 * SASS
 
 ## Wire Frames
 
-https://imgur.com/xVYLA7K
-https://imgur.com/UHCTgc3
+<img src="https://imgur.com/xVYLA7K" title="Wire Frame 1"/>
+<img src="https://imgur.com/UHCTgc3" title="Wire Frame 2"/>
+
 
 ## Future Iterations
+<<<<<<< HEAD
 
 On next update, I will fix patch clicks still running after game is finished.
+=======
+On next update, I will fix patch clicks still running after game is finished. <br>
+>>>>>>> version14
 Add sounds to game
