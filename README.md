@@ -41,6 +41,5 @@ Preliminary Wire Frame 2
 
 
 ## Future Iterations
-On next update, I will fix patch clicks still running after game is finished. <br>
-Add sounds to game.<br>
+On next update, add sounds to game.<br>
 Clear form fields after sign up and sign in.
