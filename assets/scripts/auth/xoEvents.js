@@ -113,6 +113,7 @@ const gameLogic = function (event) {
     ($('#box8').val() === 'x' || $('#box8').val() === 'o') &&
     store.gameOver === false) {
     $('#playerstatus').text('Draw!')
+    $('section').hide(800)
   } else {
     if (i === 'x') {
       playerOTurn()
