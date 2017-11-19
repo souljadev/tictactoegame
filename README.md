@@ -41,5 +41,5 @@ Preliminary Wire Frame 2
 
 
 ## Future Iterations
-On next update, add sounds to game.<br>
-Clear form fields after sign up and sign in.
+
+On next update, add sounds to game.
